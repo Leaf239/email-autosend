@@ -33,12 +33,7 @@ def send_hourly_email():
     
     send_email(sender_email, receiver_email, subject, body, smtp_server, smtp_port, sender_password)
 
-# 매 정각에 이메일을 보내는 루프
+# 60분마다 이메일을 보내는 루프
 while True:
-    current_time = datetime.now()
-    # 현재 시간이 정각인지 확인 (분과 초가 모두 0일 때)
-    if current_time.minute == 0 and current_time.second == 0:
-        send_hourly_email()
-        time.sleep(3600)  # 한 시간을 대기하여 중복 전송 방지
-    else:
-        time.sleep(1)  # 초 단위로 계속 체크
+    send_hourly_email()
+    time.sleep(3600)  # 한 시간을 대기하여 중복 전송 방지
