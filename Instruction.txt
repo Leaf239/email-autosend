@@ -1,3 +1,7 @@
+해야할것: 파이썬 설치 (python.org)
+pip install (라이브러리)
+
+
 보내는사람 주소: minecraftbigfan720@gmail.com
 받는사람 주소: 모장 문의센터
 보내는사람 비밀번호: 문자로 전송함.
