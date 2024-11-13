@@ -26,7 +26,9 @@ def send_hourly_email():
     sender_email = "your_email@gmail.com"
     receiver_email = "receiver_email@example.com"
     subject = "Hourly Update"
-    body = "This is an automated email sent every hour."
+    body = """This is an automated
+    email sent every hour.
+    hello,world!"""
     smtp_server = "smtp.gmail.com"
     smtp_port = 587
     sender_password = "your_email_password"
